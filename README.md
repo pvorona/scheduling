@@ -1,7 +1,7 @@
 ## Task scheduling
 
 ```ts
-import { scheduleTask, PRIORITIES } from '@pvorona/scheduling'
+import { scheduleTask, PRIORITY } from '@pvorona/scheduling'
 
 let windowWidth: number | undefined
 
