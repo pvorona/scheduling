@@ -1,0 +1,58 @@
+{
+  "name": "@pvorona/scheduling",
+  "version": "0.0.1",
+  "description": "Task scheduling",
+  "module": "./dist/index.js",
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "npm run verify && npm run test && npm run build",
+    "test": "jest --collectCoverage",
+    "lint": "eslint src --cache --fix",
+    "prettier": "prettier src -c -w",
+    "typescript": "tsc --noEmit",
+    "verify": "npm run lint && npm run prettier && npm run typescript",
+    "prepare": "husky install"
+  },
+  "author": "pvorona",
+  "license": "ISC",
+  "lint-staged": {
+    "*.ts": [
+      "npm run verify"
+    ],
+    "*.js": [
+      "prettier -c -w"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "@types/faker": "^5.5.9",
+    "@types/jest": "^27.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "babel-jest": "^27.4.5",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^25.3.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.5",
+    "lint-staged": "^12.3.1",
+    "prettier": "2.5.1",
+    "rollup": "^2.63.0",
+    "rollup-plugin-filesize": "^9.1.2",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "typescript": "^4.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-pvorona:pvorona/scheduling.git"
+  },
+  "keywords": [
+    "scheduling",
+    "tasks"
+  ]
+}
