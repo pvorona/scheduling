@@ -1,6 +1,6 @@
 {
   "name": "@pvorona/scheduling",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Task scheduling",
   "module": "./dist/index.js",
   "types": "./dist/src/index.d.ts",
@@ -24,35 +24,33 @@
       "prettier -c -w"
     ]
   },
-  "devDependencies": {
-    "@babel/core": "^7.16.5",
-    "@babel/preset-env": "^7.16.5",
-    "@babel/preset-typescript": "^7.16.5",
-    "@types/faker": "^5.5.9",
-    "@types/jest": "^27.0.3",
-    "@typescript-eslint/eslint-plugin": "^5.8.1",
-    "@typescript-eslint/parser": "^5.8.1",
-    "babel-jest": "^27.4.5",
-    "eslint": "^8.5.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-jest": "^25.3.2",
-    "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.4",
-    "jest": "^27.4.5",
-    "lint-staged": "^12.3.1",
-    "prettier": "2.5.1",
-    "rollup": "^2.63.0",
-    "rollup-plugin-filesize": "^9.1.2",
-    "rollup-plugin-sourcemaps": "^0.6.3",
-    "rollup-plugin-typescript2": "^0.31.1",
-    "typescript": "^4.5.4"
-  },
   "repository": {
     "type": "git",
-    "url": "git@github.com-pvorona:pvorona/scheduling.git"
+    "url": "git@github.com:pvorona/scheduling.git"
   },
   "keywords": [
     "scheduling",
     "tasks"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/core": "7.16.12",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-typescript": "7.16.7",
+    "@types/jest": "27.4.0",
+    "@typescript-eslint/eslint-plugin": "5.10.1",
+    "@typescript-eslint/parser": "5.10.1",
+    "babel-jest": "27.4.6",
+    "eslint": "8.7.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-jest": "26.0.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "husky": "7.0.4",
+    "jest": "27.4.7",
+    "lint-staged": "12.3.2",
+    "prettier": "2.5.1",
+    "rollup": "2.66.1",
+    "rollup-plugin-sourcemaps": "0.6.3",
+    "rollup-plugin-typescript2": "0.31.1",
+    "typescript": "4.5.5"
+  }
 }

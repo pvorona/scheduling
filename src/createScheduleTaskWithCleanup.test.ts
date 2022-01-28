@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import { createScheduleTaskWithCleanup } from './createScheduleTaskWIthCleanup'
+import { createScheduleTaskWithCleanup } from './createScheduleTaskWithCleanup'
 import { PRIORITY } from './constants'
 
 const FRAME_INTERVAL = 100
